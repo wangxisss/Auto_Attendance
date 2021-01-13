@@ -32,5 +32,8 @@ jobs:
         env:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
+          username22: ${{ secrets.USERNAME22 }}
+          password22: ${{ secrets.PASSWORD22 }}
         run: |
           python3 auto.py --username=$username --password=$password
+          python3 auto.py --username=$username22 --password=$password22
